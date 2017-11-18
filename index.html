@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars RPG</title>
+    <!--Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Basic|Bowlby+One" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://use.fontawesome.com/5f1f3cb4d3.js"></script>
+    <!--custom css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-4 col-md-push-8 col-lg-4 col-lg-push-8">
+                <div id="header">
+                    <img src="assets/images/TitleLogo.jpg" class="img-responsive">
+                    <h2>Star Wars</h2>
+                    <h3>The Role-Playing Game</h3>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-pull-4 col-lg-8 col-lg-pull-4" id="battle">
+                <div id="active"></div>
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center">
+                    <h1>VS</h1>
+                    <button class="btn btn-primary center-block" id="fight">Fight</button>
+                </div>
+                <div id="under-attack"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-center">
+                <button class="btn btn-primary center-block" id="reset">Try Again?</button>
+                <div id="alerts"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <div class="row">
+                    <!--Game Characters-->
+                    <div id="available">
+                        <p>Choose Your <span id="choose">Character</span></p>
+                        <div class="character col-xs-6 col-sm-6 col-md-3 col-lg-3 thumbnail" id="LukeSkywalker" data-name="Rey" data-hp="100" data-attack-power="6" data-counter-attack="20">
+                            <div class="caption">
+                                Rey
+                            </div>
+                            <div class="charpic">
+                                <img src="assets/images/Rey.jpg" alt="Rey">
+                            </div>
+                            <div class="caption jedi-HP">100</div>
+                        </div>
+                        <div class="character col-xs-6 col-sm-6 col-md-3 col-lg-3 thumbnail" id="Yoda" data-name="Yoda" data-hp="120" data-attack-power="6" data-counter-attack="24">
+                            <div class="caption">
+                                Master Yoda
+                            </div>
+                            <div class="charpic">
+                                <img src="assets/images/Yoda.jpg" alt="Yoda">
+                            </div>
+                            <div class="caption jedi-HP">120</div>
+                        </div>
+                        <div class="character col-xs-6 col-sm-6 col-md-3 col-lg-3 thumbnail" id="DarthVader" data-name="Darth Vader" data-hp="180" data-attack-power="6" data-counter-attack="30">
+                            <div class="caption">
+                                Darth Vader
+                            </div>
+                            <div class="charpic">
+                                <img src="assets/images/Vader.jpg" alt="Darth Vader">
+                            </div>
+                            <div class="caption jedi-HP">180</div>
+                        </div>
+                        <div class="character col-xs-6 col-sm-6 col-md-3 col-lg-3 thumbnail" id="KyloRenn" data-name="Kylo Renn" data-hp="150" data-attack-power="6" data-counter-attack="30">
+                            <div class="caption">
+                                Kylo Renn
+                            </div>
+                            <div class="charpic">
+                                <img src="assets/images/KyloRenn.jpg" alt="Kylo Renn">
+                            </div>
+                            <div class="caption jedi-HP">150</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--custom JS-->
+        <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

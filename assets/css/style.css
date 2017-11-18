@@ -1,0 +1,83 @@
+html {
+	min-height: 100%;
+	position: relative;
+}
+body {
+	background: url(../images/Star-Wars-HD-Fight-Wallpaper.jpg) no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Bowlby One', cursive;
+	margin-bottom: 8.5em;
+}
+
+.container {
+	min-height: 100%;
+}
+
+#header, #game, #active {
+	padding-top: 2em;
+}
+
+h1, h2, h3, button {
+	text-align: center;
+	color: gold;
+}
+
+p {
+	color: gold;
+}
+
+.charpic {
+	height: 180px;
+	width: 100%;
+	overflow-y: hidden;
+}
+
+.thumbnail img {
+	width: 100%;
+}
+
+.thumbnail .caption {
+	font-size: 75%;
+	text-align: center;
+	padding: 0.25em;
+	margin-bottom: 0px;
+}
+
+.thumbnail {
+	border: 0.2em solid gold;
+}
+
+.thumbnail:hover {
+    filter: drop-shadow(0.4em 0.4em 0em red);
+}
+
+
+.btn, .btn-primary, .btn-primary:active, .btn-primary:focus, .btn-primary:visited {
+	color: gold;
+	background-color: rgba(112, 101, 0, 0.8);
+	border-color: gold;
+}
+
+.btn-primary:hover {
+	color: gold;
+	background-color: rgba(112, 101, 0, 1.0);
+	border-color: gold;
+	
+}
+
+#reset, #fight, #battle {
+	display: none;
+}
+
+#alerts {
+	font-family: "Basic", sans-serif;
+	font-size: 100%;
+	color: #F4E560;
+	text-align: center;
+	min-height: 100%;
+
+}
+
+#gh-link {
+	font-size: 1.5em;
+}
